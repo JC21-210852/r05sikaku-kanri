@@ -1,6 +1,6 @@
 FROM gradle:latest
 WORKDIR /app
-RUN git clone https://github.com/TCC-SystemEngineeringDept/r05sikaku-kanri.git servlet-source
+RUN git clone https://github.com/JC21-210852/r05sikaku-kanri.git servlet-source09
 RUN ls -l /app/servlet-source
 COPY ./build.gradle /app/servlet-source/build.gradle
 RUN gradle -p servlet-source war
